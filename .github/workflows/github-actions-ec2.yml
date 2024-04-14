@@ -28,3 +28,6 @@ jobs:
             npm install
             npm run build
             sudo mv -f portfolio/dist /var/www/dhruvmishra/
+
+
+path: path/to/github-actions-ec2.yml
