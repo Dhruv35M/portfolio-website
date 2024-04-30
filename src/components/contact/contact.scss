@@ -21,6 +21,7 @@
 
     h2 {
       font-size: 70px;
+      text-align: center;
       @include mobile {
         font-size: 36px;
       }
@@ -28,8 +29,9 @@
 
     h3 {
       font-size: 40px;
+      text-align: center;
       @include mobile {
-        font-size: 26px;
+        font-size: 46px;
       }
     }
 
@@ -45,6 +47,7 @@
     .itemContainer {
       display: flex;
       flex-direction: column;
+      justify-content: center;
       gap: 30px;
 
       @include mobile {
@@ -53,6 +56,12 @@
     }
 
     .item {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+      justify-content: space-between;
+      padding: 0px 50px;
+
       @include mobile {
         display: flex;
         align-items: center;

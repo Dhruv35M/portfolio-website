@@ -4,6 +4,7 @@ import Cursor from "./components/cursor/Cursor";
 import Hero from "./components/hero/Hero";
 import Navbar from "./components/navbar/Navbar";
 import Projects from "./components/projects/Projects";
+import Skills from "./components/skills/Skills";
 
 const App = () => {
   return (
@@ -12,6 +13,9 @@ const App = () => {
       <section id="Homepage">
         <Navbar />
         <Hero />
+      </section>
+      <section id="Skills">
+        <Skills />
       </section>
       <Projects />
       <section id="Contact">
