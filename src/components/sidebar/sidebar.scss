@@ -1,11 +1,13 @@
+@import "../../app.scss";
+
 .sidebar {
   display: flex;
   flex-direction: column;
   justify-content: center;
   background-color: white;
   color: black;
-  position: fixed;
   z-index: 999;
+  position: fixed;
 
   .bg {
     position: fixed;
@@ -16,6 +18,10 @@
     // background-color: white;
     background-color: #2a2a2a;
     color: white;
+
+    @include mobile {
+      width: 200px;
+    }
 
     .links {
       position: absolute;
@@ -29,6 +35,9 @@
 
       a {
         font-size: 40px;
+        @include mobile {
+          font-size: 20px;
+        }
       }
     }
   }

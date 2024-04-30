@@ -12,7 +12,7 @@ const Navbar = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
         >
-          DM
+          <img src="/logo.png" alt="" className="logo" />
         </motion.span>
         <div className="social">
           <a
