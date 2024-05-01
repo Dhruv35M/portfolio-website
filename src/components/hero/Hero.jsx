@@ -66,7 +66,7 @@ const Hero = () => {
               animate="scrollbutton"
               src="/scroll.png"
               className="scroll-btn"
-              alt=""
+              alt="scroll button"
             />
           </motion.a>
         </motion.div>
@@ -82,7 +82,7 @@ const Hero = () => {
 
       <div className="imageContainer">
         {/* <img src="/hero.png" alt="" /> */}
-        <img src="/devloper.png" alt="" />
+        <img src="/developer.png" alt="developer image" />
       </div>
     </div>
   );
