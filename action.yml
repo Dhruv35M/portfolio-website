@@ -24,7 +24,6 @@ jobs:
           TARGET: ${{ secrets.TARGET_DIR }}
           script: |
             sudo apt-get -y update
-            cd home
             cd portfolio
             npm install
             npm run build
