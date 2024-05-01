@@ -16,7 +16,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Executing remote ssh commands using ssh key
-        uses: ./.github
+        uses: dhruv35m/portfolio-website@main
         with:
           host: ${{ secrets.HOST_DNS }}
           username: ${{ secrets.USERNAME }}
