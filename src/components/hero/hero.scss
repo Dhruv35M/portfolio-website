@@ -63,6 +63,8 @@
 
         @include mobile {
           padding: 10px;
+          border: 1px solid blueviolet;
+          background-color: rgba(138, 43, 226, 0.2588235294);
         }
       }
 
