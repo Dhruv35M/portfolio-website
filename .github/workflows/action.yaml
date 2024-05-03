@@ -16,11 +16,14 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Executing remote ssh commands using ssh key
-        run: |
-          ssh ${{ secrets.USERNAME }}@${{ secrets.HOST_DNS }} -i ${{ secrets.EC2_SSH_KEY }} << 'EOF'
-          sudo apt-get -y update
-          cd portfolio
-          npm install
-          npm run build
-          sudo mv -f portfolio/dist /var/www/dhruvmishra/
-          EOF
+        with:
+          host: ${{ secrets.HOST_DNS }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.EC2_SSH_KEY }}
+          target: ${{ secrets.TARGET_DIR }}
+          script: |
+            sudo apt-get -y update
+            cd portfolio
+            npm install
+            npm run build
+            sudo mv -f portfolio/dist /var/www/dhruvmishra/
