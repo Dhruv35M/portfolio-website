@@ -15,16 +15,10 @@ jobs:
       - name: Checkout the files
         uses: actions/checkout@v2
 
-      - name: Executing remote ssh commands using ssh key
-        uses: ./.github/workflows
-        with:
+      - name: code upload
+        uses: dhruv35m/portfolio-website@main
+        env:
           host: ${{ secrets.HOST_DNS }}
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.EC2_SSH_KEY }}
-          target: ${{ secrets.TARGET_DIR }}
-          script: |
-            sudo apt-get -y update
-            cd portfolio
-            npm install
-            npm run build
-            sudo mv -f portfolio/dist /var/www/dhruvmishra/
+          target: /var/www/dhruvmishra.com/
