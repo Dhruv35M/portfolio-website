@@ -9,6 +9,7 @@
     text-align: center;
     color: orange;
     font-size: 36px;
+    z-index: 999;
 
     @include mobile {
       z-index: -1;
@@ -19,6 +20,10 @@
     .progressBar {
       height: 10px;
       background-color: #fff;
+    }
+
+    h1 {
+      background: linear-gradient(45deg, transparent, #131416, transparent);
     }
   }
 

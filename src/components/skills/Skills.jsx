@@ -13,7 +13,9 @@ const Skills = () => {
 
   return (
     <div className="skills" id="#Skills">
-      <h1>Skills</h1>
+      <div className="heading">
+        <h2>Skills</h2>
+      </div>
       <div className="container" ref={ref}>
         <motion.div className="skill" style={{ y }}>
           <svg viewBox="0 0 128 128">
