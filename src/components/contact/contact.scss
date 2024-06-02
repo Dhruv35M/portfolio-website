@@ -85,8 +85,9 @@
   }
 
   .formContainer {
-    flex: 1;
     position: relative;
+    flex: 1;
+
     @include mobile {
       width: 100%;
       padding: 50px;
@@ -96,11 +97,15 @@
       stroke: orange;
       position: absolute;
       margin: auto;
+      width: 100%;
       z-index: -1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
       @include mobile {
         svg {
-          width: 300px;
+          width: 50%;
         }
       }
     }
