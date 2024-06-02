@@ -1,35 +1,19 @@
 @import "../../app.scss";
 
 .skills {
-  top: 0;
-  left: 0;
-  padding-top: 50px;
-  text-align: center;
-  color: orange;
-  font-size: 36px;
-
-  .heading {
-    position: sticky;
-    top: 0;
-    left: 0;
+  h2 {
+    font-size: 72px;
+    text-align: center;
+    padding-top: 50px;
     text-align: center;
     color: orange;
-    font-size: 36px;
-    z-index: 999;
-    background: linear-gradient(45deg, transparent, #131416, transparent);
-
-    h2 {
-      font-size: 72px;
-      text-align: center;
-      text-align: center;
-      color: orange;
-
-      @include mobile {
-        font-size: 50px;
-      }
+    background-color: #1d1f21;
+    position: relative;
+    z-index: 9999;
+    @include mobile {
+      font-size: 50px;
     }
   }
-
   .container {
     margin-top: 50px;
     display: flex;
