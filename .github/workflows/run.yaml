@@ -16,7 +16,7 @@ jobs:
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
-            sudo su
+            export PATH=$PATH:/usr/local/bin
             cd /var/www/dhruvmishra/portfolio/
-            npm i
-            npm run build
+            sudo npm i
+            sudo npm run build
