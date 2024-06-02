@@ -29,7 +29,7 @@ const Contact = () => {
       whileInView="animate"
     >
       <motion.div className="textContainer">
-        <motion.h2>Let's work together</motion.h2>
+        <motion.h2>Let's change world together</motion.h2>
         <div className="itemContainer">
           <motion.div className="item">
             <h3>Mail</h3>
