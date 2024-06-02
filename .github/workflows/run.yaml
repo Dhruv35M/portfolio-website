@@ -17,5 +17,5 @@ jobs:
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
             cd /var/www/dhruvmishra/portfolio/
-            sudo /home/ubuntu/.nvm/versions/node/v21.7.2/bin/npm i
-            sudo /home/ubuntu/.nvm/versions/node/v21.7.2/bin/npm run build
+            sudo /home/ubuntu/.nvm/versions/node/v21.7.2/bin/npm i --prefix /home/ubuntu/.nvm/versions/node/v21.7.2/bin/
+            sudo /home/ubuntu/.nvm/versions/node/v21.7.2/bin/npm run build --prefix /home/ubuntu/.nvm/versions/node/v21.7.2/bin/
