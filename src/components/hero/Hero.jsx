@@ -82,7 +82,7 @@ const Hero = () => {
 
       <div className="imageContainer">
         {/* <img src="/hero.png" alt="" /> */}
-        <img src="/developer.png" alt="developer image" />
+        <img src="/developer.webp" alt="developer image" />
       </div>
     </div>
   );
