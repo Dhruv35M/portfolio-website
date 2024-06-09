@@ -19,13 +19,20 @@ const items = [
   },
   {
     id: 3,
+    title: "Chat App",
+    img: "/chatApp.webp",
+    url: "https://github.com/Dhruv35M/chat-app/",
+    desc: "Connect with friends and family like never before with our innovative chat app crafted with MEAN stack and Socket.IO technologies. Experience seamless communication with real-time messaging. Elevate your chatting experience today!",
+  },
+  {
+    id: 4,
     title: "Movie Trailer App",
     img: "/movieTrailer.webp",
     url: "https://github.com/Dhruv35M/Movie-Trailer-App",
     desc: "Dive into cinema with our React app! Discover the latest movies to watch, watch trailers, and ignite your love for Movies. Lights, camera, action! 🍿🎥",
   },
   {
-    id: 4,
+    id: 5,
     title: "BMI Checker",
     img: "/bmi.webp",
     url: "https://github.com/Dhruv35M/BMICheckerApp",
