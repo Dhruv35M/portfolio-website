@@ -17,8 +17,6 @@ jobs:
 
       - name: code upload
         uses: easingthemes/ssh-deploy@main
-        run: |
-        rsync /home/runner/work/portfolio-website/portfolio-website/ ***@***:/var/www/dhruvmishra/portfolio/ --rsh "ssh -p 22 -i /home/runner/.ssh/deploy_key_***_1717941891783 -o StrictHostKeyChecking=no" --recursive --exclude= -rlgoDzvc -i --no-perms --chmod=ugo=rwX
         env:
           SSH_PRIVATE_KEY: ${{ secrets.EC2_SSH_KEY }}
           REMOTE_HOST: ${{ secrets.HOST_DNS }}
