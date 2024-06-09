@@ -18,15 +18,17 @@ const Navbar = () => {
           <a
             href="https://www.linkedin.com/in/dhruv-mishra-developer/"
             target="__blank"
+            title="linkedIn"
           >
             <img src="/linkedin.png" alt="linkedin" />
           </a>
-          <a href="https://github.com/dhruv35m" target="__blank">
+          <a href="https://github.com/dhruv35m" target="__blank" title="github">
             <img src="/github.png" alt="github" />
           </a>
           <a
             href="https://mail.google.com/mail/u/0/?view=cm&amp;fs=1&amp;tf=1&amp;to=dhruv35m@gmail.com"
             target="_blank"
+            title="mail me"
           >
             <img src="/gmail.png" alt="gmail" />
           </a>
