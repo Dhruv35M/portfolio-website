@@ -83,7 +83,7 @@ const Contact = () => {
           <input type="text" required placeholder="Name" />
           <input type="email" required placeholder="Email" />
           <textarea rows={8} placeholder="Message" />
-          <button>Send Message</button>
+          <button>Send</button>
         </motion.form>
       </div>
     </motion.div>
